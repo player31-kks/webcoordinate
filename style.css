@@ -1,0 +1,38 @@
+html,
+body{
+    margin: 0;
+    cursor: none;
+    background-color: black;
+}
+.cursor{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    /* 위치를 이동시키는 것 */
+    transform: translate(-50%,-50%); 
+}
+
+.coordinate{
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    left: 50%;
+    top:50%;
+    transform: translate(60%,50%);
+}
+.xline{
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid white;
+    top:50%;
+}
+
+.yline{
+    position: absolute;
+    box-sizing: border-box;
+    height:100%;
+    border: 1px solid white;
+    left: 50%;
+}
