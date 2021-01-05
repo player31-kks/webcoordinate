@@ -9,11 +9,9 @@ document.addEventListener('mousemove',(e)=>{
     const y = e.clientY;
 
     coordinate.textContent = `${x}px ${y}px`
-    coordinate.style.left=`${x}px`
-    coordinate.style.top=`${y}px`
-    xline.style.top =`${y}px`
-    yline.style.left = `${x}px`
+    coordinate.style.transform = `translate(${x}px,${y}px)`
+    cursor.style.transform = `translate(${x}px,${y}px)`
 
-    cursor.style.top = `${y}px`
-    cursor.style.left = `${x}px`
+    xline.style.transform =`translateY(${y}px)`
+    yline.style.transform = `translateX(${x}px)`
 })
